@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <title>Giphy API || BLACKICE </title>
+    <!-- Reset CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- Link to Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+
+<body>
+<!-- heading -->
+<div class="container text-center">
+        <h1 class="mainText"><strong>GifTastic Animal- Gif</strong></h1>
+    </div>
+
+    <!-- <div class="container">
+        <div class="jumbotron">
+            <h1>Animal Gifs Search</h1>
+        </div>
+    </div> -->
+<!-- button display row -->
+
+        <div class="row">
+            <div class="container" id="display-buttons"></div>
+        </div>
+<!-- user input field -->
+
+        <div class="row">
+            <div class="container">        
+                <form class ="input-group mb-3" id="form">
+                    <label for="user-input" class="col9">Animal gifs!</label>
+                    <input type="text" id="user-input">
+                    <input id="submitPress" type="submit" value="Submit" class="btn col3 btn-default">
+                </form>
+        </div>
+        </div>
+<!-- display field for image -->
+        <div class="row">
+            <div class="container" id="display-images">
+            </div>
+        </div>
+    <!-- Link to JS -->
+    <script src="assets/js/giphy.js"></script>
+</body>
+
+</html>

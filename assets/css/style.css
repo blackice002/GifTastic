@@ -1,0 +1,74 @@
+button, div, form, input {
+	margin: 2px;
+}
+.mainText {
+    background-color:rgba(0, 0, 0, 0.616);
+    font-weight: 400;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    padding: 20px;
+    color:white;
+    border-radius:10px;
+  }
+  
+  .mainText .word {
+    display: inline-block;
+    line-height: 1em;
+  }
+
+
+img {
+	max-width: 200px;
+	max-height: 200px;
+}
+
+label {
+    color: #fff;
+}
+
+.btn-default {
+    color: #000;
+    font-size: medium;
+}
+
+body {
+	background-image: url("../images/anais-06.jpg");
+    font-family: 'Bad Script', cursive;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    border: 1px solid gray;
+    border-radius:10px;
+    background-color:rgba(21, 117, 93, 0.582);
+}
+
+/* .holder {
+    float: left;
+    width:30%;
+} */
+
+.jumbotron {
+    text-align: center;
+}
+img{
+    width:100%
+}
+
+#display-images{
+    /* border: 1px solid rgb(206, 204, 204); */
+/* width:100%; */
+  }
+
+.card{
+      background-color: rgb(188, 196, 197);
+     border: 1px solid rgb(206, 204, 204); 
+    width:320px;
+    display: inline-block;
+    justify-content: center;
+
+  }
+  /* .card-img-top{
+      width:100%;
+  } */
