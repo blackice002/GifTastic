@@ -15,20 +15,26 @@ $(document).ready(function () {
         }).done(function (response) {
             var results = response.data;
             for (var j = 0; j < results.length; j++) {
+
             // new div for result
                 var displayDiv = $("<div>");
                 displayDiv.addClass(" card col-3 mt-4 ml-4");
+
             // img div for image to dispaly
                 var image = $("<img>");
                 image.addClass('gif card-top ');
+
             // image attr. for still image
                 image.attr("src", response.data[j].images.original_still.url);
                 image.attr("data-still", response.data[j].images.original_still.url);
+
             // image attr. for animated gif
                 image.attr("data-animate", response.data[j].images.original.url);
                 image.attr("data-state", "still");
+
             // image.attr("class", "card-top gif");
                 displayDiv.append(image);
+
             // variable for rating data 
                 var rating = response.data[j].rating;
                 console.log(response);
@@ -43,11 +49,8 @@ $(document).ready(function () {
     }
 // function for ganerated button 
     function renderButtons() {
-
         $("#display-buttons").empty();
-
         for (var i = 0; i < displayedButtons.length; i++) {
-
             var newButton = $("<button>")
             newButton.attr("class", "btn btn-success");
             newButton.attr("id", "input")
@@ -56,9 +59,9 @@ $(document).ready(function () {
             $("#display-buttons").append(newButton);
         }
     }
+
 // image and animation play and pause function
     function imageChangeState() {
-
         var state = $(this).attr("data-state");
         var animateImage = $(this).attr("data-animate");
         var stillImage = $(this).attr("data-still");
@@ -84,8 +87,7 @@ $(document).ready(function () {
         }else{
             displayedButtons.push(input); 
         }
-        // displayedButtons.push(input);
-
+        
         renderButtons();
 
         return false;
